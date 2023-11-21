@@ -9,6 +9,7 @@ body{
     background-color: #0e1014;
     color: var(--light,  #E5E4EA);
     z-index: -2;
+    overflow-x: hidden;
 }
 
 ul{
@@ -279,11 +280,13 @@ li{
         position: absolute;
         left: -55px;
         top: 241px;
+
     }
     .light2{
         position: absolute;
         left: 258px;
         top: 162px;
+
     }
     .header{
         padding-top: 0;
@@ -305,7 +308,7 @@ li{
     .header__nav ul{
         padding: 0 16px;
         margin: 0;
-        width: 288px;
+        width: 265px;
         display: flex;
         justify-content: space-between;
         padding: 15px 0;
