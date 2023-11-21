@@ -10,6 +10,7 @@ body{
     color: var(--light,  #E5E4EA);
     z-index: -2;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 ul{
@@ -280,6 +281,7 @@ li{
         position: absolute;
         left: -55px;
         top: 241px;
+        object-fit: cover;
 
     }
     .light2{
