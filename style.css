@@ -10,7 +10,6 @@ body{
     color: var(--light,  #E5E4EA);
     z-index: -2;
     overflow-x: hidden;
-    max-width: 100vw;
 }
 
 ul{
@@ -23,6 +22,7 @@ li{
 .container{
     position: relative;
     max-width: 1170px;
+    min-width: 300px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -34,6 +34,8 @@ li{
 }
 .balls{
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .ball1{
     position: absolute;
@@ -60,7 +62,7 @@ li{
     border-radius: 311px;
     opacity: 0.5;
     background: #961A1A;
-    filter: blur(160px);
+    filter: blur(120px);
     position: absolute;
     left: -249px;
     top: 251px;
@@ -68,14 +70,14 @@ li{
 .light2{
     width: 259px;
     height: 259px;
-    flex-shrink: 0;
     border-radius: 259px;
     opacity: 0.5;
     background: #833AB4;
-    filter: blur(160px);
+    filter: blur(120px);
     position: absolute;
     right: 429px;
     top: -154px;
+
 }
 
 
@@ -260,6 +262,12 @@ li{
 }
 
 @media (max-width: 991px)  {
+    .container{
+        overflow-x: hidden;
+    }
+    .balls{
+        position: absolute;
+    }
 
     .ball3,.ball1, .ball2{
         display: none;
@@ -267,7 +275,7 @@ li{
     .ball4{
         display: block;
         position: absolute;
-        left: 258px;
+        right: -20px;
         top: 236px;
     }
     .ball5{
@@ -278,17 +286,14 @@ li{
     }
 
     .light1{
-        position: absolute;
         left: -55px;
         top: 241px;
         object-fit: cover;
 
     }
     .light2{
-        position: absolute;
-        left: 258px;
+        right: -100px;
         top: 162px;
-
     }
     .header{
         padding-top: 0;
@@ -404,6 +409,9 @@ li{
     }
 
     .footer__column{
+        margin-top: 18px;
+    }
+    .footer__column:first-child{
         margin-top: 0;
     }
     .footer__column li{
